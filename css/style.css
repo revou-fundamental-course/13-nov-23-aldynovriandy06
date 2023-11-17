@@ -1,0 +1,56 @@
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+}
+.navigation {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navigation-content { 
+    text-decoration: none;
+}
+.title-header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Main  */
+
+#main-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.review-section {
+    flex-basis: 80%;
+    flex-grow: 0;
+}
+
+.review-section img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.message-us { 
+    flex-basis: 40%;
+    flex-grow: 0;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+
+.form { 
+    display: flex;
+    flex-direction: column;
+}
+
+.button { 
+    margin-left: 10px;
+}
