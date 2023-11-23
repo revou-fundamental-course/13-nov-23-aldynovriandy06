@@ -2,50 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAJO TRAVEL AGENT</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bajo Ocean Travel</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="assets/logo/phinisi.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <section class="navigation-header">
-            <a class="navigation-content" href="">Logo</a>
-            <nav class="navigation">
-            <a class="navigation-content"  href="">Home</a>
-            <a class="navigation-content" href="">Our Package</a>
-            <a class="navigation-content" href="">Call Us</a>
-            </nav>
-        </section>
-        <section class="title-header">
-            <h1>Your best travel agent</h1>
-            <h4>Your happiness is our happiness</h4>
-        </section>
+
+    <!-- Header -->
+    <header class="whiteSection">
+        <navbar class="container" id="orangeMenu">
+            <div class="navComponents">
+                <div class="navTitle">
+                    <a target="_blank"><img src="assets/logo/phinisi.jpg" alt="phinisi"></a>
+                </div>
+                <div class="navContent">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#ourPackage">Our Package</a></li>
+                        <li><a href="#callUs">Call Us</a></li>
+                    </ul>
+                </div>
+                <div class="humburgerMenu">
+                    <img id="humMenu" src="assets/smallImage/menu.png" alt="menu">
+                </div>
+                <div id="hidden">
+                    <ul id="hiddenUl">
+                        <li class="hiddenLi"><a href="#home">Home</a></li>
+                        <li class="hiddenLi"><a href="#ourPackage">Our Package</a></li>
+                        <li class="hiddenLi"><a href="#callUs">Call Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navbar>
     </header>
 
-    <main id="main-section">
-        <section class="review-section">
-            <img src="image/img1.jpg">
-            <h3>I like to go Labuan Bajo</h3>
+    <!-- Main -->
+    <main id="main">
+        <div class="container">
+            <section id="home" class="whiteSection">
+                <div class="mainTitle">
+                    <h1>Your Trusted Travel Agent's</h1>
+                    <p>Your happiness is our hapiness</p>
+                </div>
+                <div class="mainContent">
+                    <div class="leftLayout">
+                        <div class="imageBox">
+                            <div class="slides first">
+                                <img id="imageSlider1" src="assets/ImgSlider/img1.jpg" alt="ImageSlider1">
+                            </div>
+                            <div class="slides">
+                                <img id="imageSlider2" src="assets/ImgSlider/img2.jpg" alt="ImageSlider2">
+                            </div>
+                            <div class="slides">
+                                <img id="imageSlider3" src="assets/ImgSlider/img3.jpeg" alt="ImageSlider3">
+                            </div>
+                            <div class="slides">
+                                <img id="imageSlider4" src="assets/ImgSlider/img4.jpg" alt="ImageSlider4">
+                            </div>
+                            <div class="slides">
+                                <img id="imageSlider5" src="assets/ImgSlider/img5.jpg" alt="ImageSlider5">
+                            </div>
+                        </div>
+                        <div class="testimoniBox">
+                            <br><p id="caption">"Liburan jadi indah dan nyaman bersama Bajo Travel"</p>
+                            <div class="identityBox">
+                                <div class="identityPhoto">
+                                    <img id="profilePict" src="assets/logo/profile.jpg" alt="ProfilePicture">
+                                </div>
+                                <div class="identityContent">
+                                    <h1>Presiden Jokowi</h1>
+                                    <p>President of Indonesia, 62</p>
+                                </div>
+                            </div>
+                            <hr id="captionLine">
+                        </div>
+                        <div class="benefitsExplain">
+                            <p id="benefitsExplain">Why Booking at Bajo Ocean Travel?</p>
+                            <div class="explainBox">
+                                <div class="firstBox">
+                                    <div class="nums">1</div>
+                                    <p>Private and Open Trip <br> Private and open tour packages for sailing komodo and flores trip.</p>
+                                </div>
+                                <div class="secondBox">
+                                    <div class="nums">2</div>
+                                    <p>   Easy Booking Process <br> Provide an easy service for those of you who may want to book the tour packages that we offer.</p>
+                                </div>
+                                <div class="thirdBox">
+                                    <div class="nums">3</div>
+                                    <p>Comparable Prices <br> Dare to guarantee to provide prices that are comparable to what you will get.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightLayout" id="rightLayout">
+                        <div class="titleForm">
+                            <h1>Contact Us</h1>
+                            <p>Sales akan menghubungi anda 1x24</p>
+                            <p>jam setelah data kami terima.</p>
+                        </div>
+                        <form action="/" id="formContact">
+                            <div class="input-control nameForm">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" placeholder="First and last name" autocomplete="off">
+                                <div class="error">
+                                    <img src="assets/logo/exclamation-mark.png" alt="error">
+                                    <p id="usernameCheckError">Your name is required</p>
+                                </div>
+                            </div>
+                            <div class="input-control emailForm">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off">
+                                <div class="error">
+                                    <img src="assets/logo/exclamation-mark.png" alt="error">
+                                    <p id="emailCheckError">Email is required</p>
+                                </div>
+                            </div>
+                            <div class="input-control optionForm">
+                                <label for="options">What are you interested in?</label>
+                                <div class="line"></div>
+                                <select id="options">
+                                    <option value="" disabled selected hidden>Select option</option>
+                                    <option>Vacation Spot</option>
+                                    <option>Natural Beauty</option>
+                                    <option>Beautiful View</option>
+                                </select>
+                                <div class="error">
+                                    <img src="assets/logo/exclamation-mark.png" alt="error">
+                                    <p>Your option is required</p>
+                                </div>
+                            </div>
+                            <button id="submit" type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <section id="ourPackage" class="coloredSection">
+            <div class="container" id="ourPackageSection">
+                <div class="titlePackage">
+                    <h1 id="titlePackage">Our Package</h1>
+                </div>
+                <div class="contentPackage">
+                    <div class="topPack">
+                        <div class="topContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/deck.jpg" alt="Deck">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Open Deck Charter Komodo</h1>
+                                <p>Pulau Padar</p>
+                                <p>Pink Beach</p>
+                                <p>Pulau Rinca</p>
+                                <p>Pulau Kelor (Sunset)</p>
+                            </div>
+                        </div>
+                        <div class="topContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/boat.jpeg" alt="Boat">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Speed Boat Charter komodo</h1>
+                                <p>Pulau Padar</p>
+                                <p>Pulau Komodo</p>
+                                <p>Pink Beach</p>
+                                <p>Taka Makassar</p>
+                                <p>Manta Point</p> 
+                                <p>Pulau Kanawa</p> 
+                            </div>
+                        </div>
+                        <div class="topContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/Standard.jpg" alt="Standard">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Standard Boat Charter</h1>
+                                <p>Labuan Bajo Tour using a standard ship with a ship that has a maximum capacity of 8 people.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midPack">
+                        <hr id="midPackage">
+                    </div>
+                    <div class="botPack">
+                        <div class="botContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/deluxe.jpg" alt="Deluxe">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Deluxe Phinisi Charter</h1>
+                                <p>The Phinisi Ship has deluxe class bedrooms like those in the hotel cabin ac and certainly comfortable for you.</p>
+                            </div>
+                        </div>
+                        <div class="botContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/superior.jpg" alt="Superior">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Superior Phinisi Charter</h1>
+                                <p>The Superior Ship has Superior class bedrooms like those in the hotel cabin ac and certainly comfortable for you.</p>
+                            </div>
+                        </div>
+                        <div class="botContent" id="boxContent">
+                            <div class="rightBox">
+                                <img src="assets/Ship/luxury.jpg" alt="Luxury">
+                            </div>
+                            <div class="leftBox">
+                                <h1>Phinisi Luxury Charter</h1>
+                                <p>The Phinisi Luxury ship has luxury class bedrooms that are like those in an ac cabin hotel and are certainly comfortable for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="message-us">
-            <h3>Contact Us</h3>
-            <h6>Sales akan menghubungi anda</h6>
-            <form>
-                <label for="name-input">First Name</label>
-                <input id="name-input" type="text" placeholder="First and Last Name">
-                <label for="email-input">Email Address</label>
-                <input id="email-input" type="text" placeholder="example@gmail.com">
-                <label for="interested-input">What are you interested in</label>
-                <input id="interested-input" type="text">
-                <select id="interested-input" name="interested-input">
-                    <option>Select Option</option>
-                    <option value="kelor">Pulau Kelor</option>
-                    <option value="komodo">Pulau Komodo</option>
-                    <option value="padar">Pulau Padar</option>
-                </select>
-                <button type="button" class="primary-button">Submit</button>
-            </form>
+        <section id="callUs" class="whiteSection">
+            <div class="callUsContent">
+                <h1 id="callUsTitle">Hubungi Kami</h1>
+                <div class="paragraph">
+                    <p>Bajo Ocean Travel melayani seluruh kebutuhan anda selama berlibur di Labuan Bajo</p>
+                </div>
+                <button id="callUsButton">CALL TO ACTION</button>
+                <hr id="callUsLine">
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="whiteSection">
+        <div class="footerLogo">
+            <img src="assets/logo/phinisi.jpg" alt="phinisiFooterLogo">
+        </div>
+        <div class="termPrivBox">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+        </div>
+        <p id="copyright">&copy; 2023 Aldy Novriandy</p>
+    </footer>
+    
+
+    <script src="js/index.js"></script>
 </body>
 </html>
